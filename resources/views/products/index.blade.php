@@ -9,7 +9,7 @@
                 <a href="/products/{{$product->alias}}" class="btn btn-primary">
                     Подробное описание
                 </a>
-                <a href="/cart_add/{{$product->alias}}" class="btn btn-success">
+                <a href="javascript:void(0)" data-title="{{$product->title}}" data-token="{{csrf_token()}}" data-id="{{$product->id}}" class="btn btn-success cart_add">
                     Добавить в корзину
                 </a>
             </p>

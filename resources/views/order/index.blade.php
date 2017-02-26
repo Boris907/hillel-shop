@@ -22,7 +22,7 @@
                     <td>
                         <a class="btn btn-danger" href="/cart_minus/{{$product->alias}}">-</a>
                         {{$cart[$product->id]}}
-                        <a class="btn btn-success" href="/cart_add/{{$product->alias}}">+</a>
+                        <a class="btn btn-success" href="/cart_add">+</a>
                     </td>
                     <td>{{$product->price * $cart[$product->id]}}</td>
                 </tr>
